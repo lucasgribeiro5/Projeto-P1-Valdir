@@ -20,7 +20,6 @@ closeMenu.addEventListener("click", () =>{
 form.addEventListener("submit" ,  (event) =>{
 event.preventDefault()
 
-// VALIDAÇÕES
 if (!namePerson.value){
 result.innerHTML = "Por favor digite o seu nome"
 result.className = "error"
@@ -58,7 +57,6 @@ if (!email.value){
     return
     }
   
-// LIMPAR TUDO 
   result.innerHTML = ""
   namePerson.focus()
   namePerson.value = email.value =  subject.value = message.value = ""
